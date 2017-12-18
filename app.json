@@ -8,7 +8,13 @@
     "pages/teacherlist/teacherlist",
     "pages/actionlist/actionlist",
     "pages/logs/logs",
-    "pages/psychtest/psychtest"
+    "pages/psychtest/psychtest",
+    "pages/me/me",
+    "pages/professional/professional",
+    "pages/line/line",
+    "pages/university/university",
+    "pages/recommend/recommend",
+    "pages/evaluation/evaluation"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -35,7 +41,7 @@
         "selectedIconPath": "image/bmactive.png"
       },
       {
-        "pagePath": "pages/action/action",
+        "pagePath": "pages/me/me",
         "text": "我的",
         "iconPath": "image/action.png",
         "selectedIconPath": "image/actionactive.png"
