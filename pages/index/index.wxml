@@ -46,19 +46,21 @@
 <view class="appointment">
  <view class="app-title"></view>
   <view class="app-moduler">
-
-    <navigator url="../about/about" class="mod-item">
+    <!--专业/职业评测-->
+    <navigator url="/pages/psychtest/psychtest" class="mod-item">
       <view class="mod-img">
         <image src="../../image/4.png" class="mod-image"></image>
       </view>
     </navigator>
     
-    <navigator url="../about/about" class="mod-item">
+    <!--录取概率评估-->
+    <navigator url="../action/action" class="mod-item">
       <view class="mod-img">
         <image src="../../image/2.png" class="mod-image"></image>
       </view>
     </navigator>
 
+    <!--学校推荐-->
     <navigator url="../about/about" class="mod-item">
       <view class="mod-img">
         <image src="../../image/1.png" class="mod-image"></image>
