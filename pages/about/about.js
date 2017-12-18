@@ -21,15 +21,15 @@ Page({
   },
   calling: function () {
     wx.makePhoneCall({
-      phoneNumber: '18100871756', 
+      phoneNumber: '13880443588', 
     })
   },
   getLocation: function (){
     wx.openLocation({
-      latitude: 29.53,
-      longitude: 106.57,
-      name:"南岸区城市之光",
-      address:"重庆市南岸区城市之光30楼",
+      latitude: 30.540510,
+      longitude: 104.075210,
+      name:"天府软件园",
+      address:"成都市高新区天府软件园D区5楼",
       scale: 28
     })
   },
