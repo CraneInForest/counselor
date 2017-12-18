@@ -14,7 +14,7 @@
        <image src="{{a1src}}"></image>
        </view>
        <text class="plate-info">
-        活动资讯
+        院校大全
        </text>
   </navigator>
   <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
@@ -22,7 +22,7 @@
        <image src="{{a2src}}"></image>
        </view>
        <text class="plate-info">
-        预约课程
+        专业大全
        </text>
   </navigator>
   <navigator url="/pages/teacher/teacher" hover-class="navigator-hover" class="plate-item">
@@ -30,7 +30,7 @@
        <image src="{{a4src}}"></image>
        </view>
        <text class="plate-info">
-        名师简介
+        批次线
        </text>
   </navigator>
   <navigator url="/pages/about/about" hover-class="navigator-hover" class="plate-item">
@@ -44,49 +44,26 @@
 </view>
 <view class="clear"></view>
 <view class="appointment">
- <view class="app-title">课程预约</view>
+ <view class="app-title"></view>
   <view class="app-moduler">
 
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
+    <navigator url="../about/about" class="mod-item">
       <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
-        </view>
-        <view class="moinfont">17人已申请</view>
+        <image src="../../image/4.png" class="mod-image"></image>
       </view>
     </navigator>
     
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
+    <navigator url="../about/about" class="mod-item">
       <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
-        </view>
-        <view class="moinfont">17人已申请</view>
+        <image src="../../image/2.png" class="mod-image"></image>
       </view>
     </navigator>
 
+    <navigator url="../about/about" class="mod-item">
+      <view class="mod-img">
+        <image src="../../image/1.png" class="mod-image"></image>
+      </view>
+    </navigator>
   </view>
 </view>
-<navigator class="more" url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover">
-  <view class="more-info">查看更多</view>
-  <view class="icon-jt"><image src="{{jtsrc}}" class="iconjtimg"></image></view>
-</navigator>
 <view class="clear"></view>

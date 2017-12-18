@@ -42,7 +42,7 @@
 
 .mod-item{
  width:46%;
- height:300rpx;
+ height:100rpx;
  float: left;
  margin-left:20rpx;
  margin-top:40rpx;
@@ -61,7 +61,7 @@
 } 
 .mod-image{
   width: 100%;
-  height:180rpx;
+  height:160rpx;
 }
 .mod-title{
   font-size:32rpx;
