@@ -9,7 +9,7 @@
 </swiper>
 
 <view class="plate">
-  <navigator url="/pages/action/action" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
+  <navigator url="/pages/signup/signup" open-type="switchTab" hover-class="other-navigator-hover" class="plate-item">
      <view class="plate-img">
        <image src="{{a1src}}"></image>
        </view>
@@ -66,4 +66,5 @@
     </navigator>
   </view>
 </view>
+
 <view class="clear"></view>
