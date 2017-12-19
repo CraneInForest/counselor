@@ -1,12 +1,62 @@
-<!--index.wxml-->
 <view class="container">
   <view class="userinfo">
-    <block>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname">{{userInfo.nickName}}\n\n\n</text>
     </block>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">myself</text>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">科目</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{arraykemu}}">
+              <view class="weui-input">{{arraykemu[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">分数</view>
+            </view>
+            <input class="weui-input" type="number" placeholder="点击输入高考分数" />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">高考省份</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{arrayshengfen}}">
+              <view class="weui-input">{{arrayshengfen[index1]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">目标批次</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{arraypici}}">
+              <view class="weui-input">{{arraypici[index2]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>
