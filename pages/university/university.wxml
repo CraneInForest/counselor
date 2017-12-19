@@ -5,7 +5,7 @@
       <block wx:for-items="{{list}}" wx:key="{{item.id}}">
         <view class="kind-list-item">
           <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
-            <image class="kind-list-img" src="../../image/university/{{item.id}}.bmp"></image>
+            <image class="kind-list-img" src="../../image/university/{{item.id}}.png"></image>
             <view class="kind-list-text">{{item.name}}</view>
             <view class="index-desc2">985 221</view>
             <view class="index-desc">综合排名: {{item.id}}</view>

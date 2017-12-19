@@ -8,6 +8,7 @@ Page({
     index: 0,
     index1: 0,
     index2: 0,
+    numbervalue:0,
     date: '2016-09-01',
     time: '12:01',
     motto: 'Hello World',
@@ -15,20 +16,33 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+
+  //科目
   bindPickerChange: function(e) {
+    //console.log(e.detail.value)
     this.setData({
       index: e.detail.value
     })
+
+    wx.setStorageSync("kemu", e.detail.value)
   },
+
+  //高考省份
   bindPickerChange1: function (e) {
     this.setData({
       index1: e.detail.value
     })
+
+    wx.setStorageSync("shengfen", e.detail.value)
   },
+
+  //目标批次
   bindPickerChange2: function (e) {
     this.setData({
       index2: e.detail.value
     })
+
+    wx.setStorageSync("pici", e.detail.value)
   },
   bindDateChange: function(e) {
     this.setData({
@@ -40,6 +54,11 @@ Page({
       time: e.detail.value
     })
   },
+  bindNumberChange: function (e) {
+    //console.log("number : " + e.detail.value)
+    wx.setStorageSync("fenshu", e.detail.value)
+  },
+  
   //事件处理函数
   bindViewTap: function () {
     wx.navigateTo({
@@ -55,6 +74,28 @@ Page({
           hasUserInfo: true
         })
       }
+    })
+
+    console.log("storage value : " + wx.getStorageSync("key1"))
+
+    if (wx.getStorageSync("kemu") == "") {
+      wx.setStorageSync("kemu", 0)
+    }
+    if (wx.getStorageSync("shengfen") == "") {
+      wx.setStorageSync("shengfen", 0)
+    }
+    if (wx.getStorageSync("pici") == "") {
+      wx.setStorageSync("pici", 0)
+    }
+    if (wx.getStorageSync("fenshu") == "") {
+      wx.setStorageSync("fenshu", 0)
+    }
+
+    this.setData({
+      index: wx.getStorageSync("kemu"),
+      index1: wx.getStorageSync("shengfen"),
+      index2: wx.getStorageSync("pici"),
+      numbervalue: wx.getStorageSync("fenshu")
     })
   },
   getUserInfo: function (e) {

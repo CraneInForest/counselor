@@ -1,12 +1,30 @@
-.actionpic{
- width:98%;
- height:2706rpx;
- padding:1% 1%;
- border-radius: 36rpx;
+@import "../common/lib/weui.wxss";
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
 }
-.clear{
+
+.userinfo {
   display: flex;
   flex-direction: column;
-  height:10rpx;
-  background: #eeeeee;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.header-pic {
+  width: 750rpx;
+  height: 265rpx;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
 }

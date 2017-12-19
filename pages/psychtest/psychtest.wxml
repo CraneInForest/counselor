@@ -1,5 +1,5 @@
 <view class="content">
 <image src="../../image/psychtest.png" class="actionpic"></image>
-<button>开始测试</button>
+<button bindtap='buttonClick'>开始评测</button>
 <view class="clear"></view>
 </view>

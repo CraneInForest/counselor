@@ -1,13 +1,10 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/signup/signup",
     "pages/action/action",
     "pages/about/about",
     "pages/teacher/teacher",
     "pages/teacherlist/teacherlist",
-    "pages/actionlist/actionlist",
-    "pages/logs/logs",
     "pages/psychtest/psychtest",
     "pages/me/me",
     "pages/professional/professional",

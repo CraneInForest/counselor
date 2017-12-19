@@ -1,6 +1,69 @@
-<view class="content">
-<navigator url="/pages/actionlist/actionlist" hover-class="navigator-hover" class="con-item">
-<image src="../../image/1.png" class="actionpic"></image>
-<view class="clear"></view>
-</navigator>
+<view class="container1">
+  <view class="page-body">
+    <image src="../../image/caculateheader.png" class="header-pic"></image>
+    <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">学校</view>
+            </view>
+            <input bindinput="bindSchoolChange" class="weui-input" placeholder="点击输入想报考的学校" />
+          </view>
+        </view>
+      </view>
+
+    <view class="page-section">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">科目</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{arraykemu}}">
+              <view class="weui-input">{{arraykemu[index]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell__hd">
+              <view class="weui-label">分数</view>
+            </view>
+            <input bindinput="bindNumberChange" value="{{numbervalue}}" class="weui-input" type="number" placeholder="点击输入高考分数" />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">高考省份</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{arrayshengfen}}">
+              <view class="weui-input">{{arrayshengfen[index1]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">目标批次</view>
+          </view>
+          <view class="weui-cell__bd">
+            <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{arraypici}}">
+              <view class="weui-input">{{arraypici[index2]}}</view>
+            </picker>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <button bindtap='buttonClick'>开始评估</button>
+  </view>
 </view>

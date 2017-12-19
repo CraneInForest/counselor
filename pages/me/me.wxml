@@ -26,7 +26,7 @@
             <view class="weui-cell__hd">
               <view class="weui-label">分数</view>
             </view>
-            <input class="weui-input" type="number" placeholder="点击输入高考分数" />
+            <input bindinput="bindNumberChange" value="{{numbervalue}}" class="weui-input" type="number" placeholder="点击输入高考分数" />
           </view>
         </view>
       </view>
@@ -58,4 +58,7 @@
       </view>
     </view>
   </view>
+  <text class="plate-info">
+        点击上面内容进行修改
+       </text>
 </view>
