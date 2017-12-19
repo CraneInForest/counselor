@@ -1,6 +1,6 @@
 .actionpic{
  width:98%;
- height:2706rpx;
+ height:1006rpx;
  padding:1% 1%;
  border-radius: 36rpx;
 }

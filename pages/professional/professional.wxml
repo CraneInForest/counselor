@@ -1,6 +1,3 @@
 <view class="content">
-<navigator url="/pages/actionlist/actionlist" hover-class="navigator-hover" class="con-item">
-<image src="../../image/1.png" class="actionpic"></image>
-<view class="clear"></view>
-</navigator>
+<image src="../../image/professional.png" class="actionpic"></image>
 </view>

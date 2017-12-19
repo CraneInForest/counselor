@@ -174,6 +174,9 @@ Page({
   },
   kindToggle: function (e) {
     console.log('haha')
+    wx.navigateTo({
+      url: '../university1/university1',
+    })
     var id = e.currentTarget.id, list = this.data.list;
     for (var i = 0, len = list.length; i < len; ++i) {
       if (list[i].id == id) {

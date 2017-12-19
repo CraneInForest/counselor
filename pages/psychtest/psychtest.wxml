@@ -1,6 +1,5 @@
 <view class="content">
-<navigator url="/pages/actionlist/actionlist" hover-class="navigator-hover" class="con-item">
 <image src="../../image/psychtest.png" class="actionpic"></image>
+<button>开始测试</button>
 <view class="clear"></view>
-</navigator>
 </view>
