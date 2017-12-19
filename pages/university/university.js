@@ -1,11 +1,190 @@
-//signup.js
-//获取应用实例
-var app = getApp()
 Page({
   data: {
-    signupimg: '../../image/signup.png',
-    imgsrc: 'https://ss0.bdstatic.com/9bA1vGfa2gU2pMbfm9GUKT-w/timg?searchbox_feed&quality=120&wh_rate=0&size=f648_364&ref=http%3A%2F%2Fwww.baidu.com&sec=0&di=1619440b1bc5580ece1e18c556a408d7&src=http%3A%2F%2Ft12.baidu.com%2Fit%2Fu%3D2318927072%2C2551034291%26fm%3D175%26s%3DF9E09B544C2154095A6098DF030090F1%26w%3D660%26h%3D370%26img.JPEG',
-    iconsrc: '../../image/usercount.png',
+    list: [
+      {
+        id: '1',
+        name: '北京大学',
+        open: false,
+        pages: ['view', 'scroll-view', 'swiper']
+      }, {
+        id: '2',
+        name: '清华大学',
+        open: false,
+        pages: ['text', 'icon', 'progress']
+      }, {
+        id: '3',
+        name: '武汉大学',
+        open: false,
+        pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'radio', 'slider', 'switch', 'textarea']
+      }, {
+        id: '4',
+        name: '复旦大学',
+        open: false,
+        pages: ['navigator']
+      }, {
+        id: '5',
+        name: '浙江大学',
+        open: false,
+        pages: ['image', 'audio', 'video']
+      }, {
+        id: '6',
+        name: '上海交通大学',
+        pages: ['map']
+      }, {
+        id: '7',
+        name: '南京大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '8',
+        name: '中国人民大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '吉林大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '华中科技大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+      , {
+        id: '9',
+        name: '四川大学',
+        pages: ['canvas']
+      }
+    ]
   },
-
+  kindToggle: function (e) {
+    console.log('haha')
+    var id = e.currentTarget.id, list = this.data.list;
+    for (var i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id == id) {
+        list[i].open = !list[i].open
+      } else {
+        list[i].open = false
+      }
+    }
+    this.setData({
+      list: list
+    });
+  }
 })
+

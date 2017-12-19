@@ -1,76 +1,17 @@
-
-<view class="appointment">
-  <view class="app-moduler">
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
-      <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
+<view class="university">
+  
+  <view class="index-bd">
+    <view class="kind-list">
+      <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+        <view class="kind-list-item">
+          <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+            <image class="kind-list-img" src="../../image/university/{{item.id}}.bmp"></image>
+            <view class="kind-list-text">{{item.name}}</view>
+            <view class="index-desc2">985 221</view>
+            <view class="index-desc">综合排名: {{item.id}}</view>
+          </view>
         </view>
-        <view class="moinfont">17人已申请</view>
-      </view>
-    </navigator>
-    
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
-      <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
-        </view>
-        <view class="moinfont">17人已申请</view>
-      </view>
-    </navigator>
-
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
-      <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
-        </view>
-        <view class="moinfont">17人已申请</view>
-      </view>
-    </navigator>
-
-    <navigator url="url" class="mod-item">
-      <view class="mod-signup">
-        <image src="{{signupimg}}"></image>
-      </view>
-      <view class="mod-img">
-        <image src="{{imgsrc}}" class="mod-image"></image>
-      </view>
-      <view class="mod-title">
-         <text>标题标题标题标题标题</text>  
-      </view>
-      <view class="mod-info">
-        <view class="mod-icon">
-          <image src="{{iconsrc}}" class="icon"></image>
-        </view>
-        <view class="moinfont">17人已申请</view>
-      </view>
-    </navigator>
-   </view>
+      </block>
+    </view>
+  </view>
 </view>

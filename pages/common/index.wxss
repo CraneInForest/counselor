@@ -18,7 +18,13 @@
   color: #888888;
   font-size: 28rpx;
 }
-
+.index-desc2 {
+  color: #FF0000;
+  font-size: 20rpx;
+  font-style: italic;
+  font-weight: bold;
+  flex: 1;
+}
 
 .navigator-box {
   opacity: 0;
